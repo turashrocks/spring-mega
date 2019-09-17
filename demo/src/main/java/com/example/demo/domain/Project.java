@@ -4,7 +4,6 @@ import javax.persistence.*;
 import java.util.Date;
 
 @Entity
-
 public class Project {
 
     @Id
@@ -19,6 +18,9 @@ public class Project {
     private Date created_At;
     private Date updated_At;
 
+    public Project(){
+
+    }
     public Long getId() {
         return id;
     }
@@ -81,10 +83,6 @@ public class Project {
 
     public void setUpdated_At(Date updated_At) {
         this.updated_At = updated_At;
-    }
-
-    public Project(){
-
     }
 
     @PrePersist
